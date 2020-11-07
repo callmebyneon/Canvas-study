@@ -45,11 +45,11 @@ export class Wave {
 
     let prevX = this.points[0].x;
     let prevY = this.points[0].y;
-
     ctx.moveTo(prevX, prevY);
 
     for (let i = 0; i < this.totalPoints; i++) {
-      if (i < this.totalPoints - 1) {
+      // i가 처음과 끝점이 아닐 때만 업데이트
+      if (i < this.totalPoints - 1 && i > 0) {
         this.points[i].update();
       }
 
