@@ -1,6 +1,6 @@
 export class Sheep {
   constructor(img, stageWidth) {
-    // 양의 이미지와 양이 등장할 x위치(스테이지 오른쪽 끝)ㅇ르 파라미터로 받아옴
+    // 양의 이미지와 양이 등장할 x위치(스테이지 오른쪽 끝)을 파라미터로 받아옴
     this.img = img;
 
     // 양이미지의 총프레임 수, 시작 프레임(현재 프레임)
